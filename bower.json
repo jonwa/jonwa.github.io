@@ -1,0 +1,15 @@
+{
+  "name": "jonwa.github.io init",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "latest",
+    "backbone": "latest",
+    "underscore": "latest",
+    "requirejs": "~2.1.22",
+    "backbone.marionette": "marionette#~2.4.4",
+    "backbone.radio": "~1.0.2",
+    "handlebars": "~4.0.5",
+    "text": "requirejs/text#~2.0.14",
+    "bootstrap": "~3.3.6"
+  }
+}
