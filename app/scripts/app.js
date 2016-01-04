@@ -3,7 +3,9 @@ define(['backbone', 'backbone.marionette'], function(Backbone, Marionette){
 
   App.addRegions({
     header: '.header',
-    content: '.content'
+    intro: '.intro-header',
+    games: '.games',
+    about: '.about'
   });
 
   App.addInitializer(function(){

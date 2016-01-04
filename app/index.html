@@ -2,17 +2,21 @@
 <html>
   <head>
     <title>Jon Wahlström</title>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="A portfolio website for personal projects.">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="stylesheet" media="screen" href="styles/styles.css" type="text/css"/>
   </head>
-  <body>
-	<div data-role="page">
-		<div data-role="header" class="header navbar navbar-default navbar-fixed-top"></div>
-		<div data-role="content" class="content container-fluid"></div>
-	</div>
-	<script data-main="scripts/config/config.js" src="scripts/vendor/requirejs/require.js"></script>
+  <body data-role="page" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="header navbar navbar-default navbar-fixed-top" role="navigation"></div>
+    <div class="content container-fluid">
+      <div class="intro-header"></div>
+      <section id="games" class="games content-section text-center"></section>
+      <section id="about" class="about container content-section text-center"></section>
+    </div>
+	  <script data-main="scripts/config/config.js" src="scripts/vendor/requirejs/require.js"></script>
   </body>
 </html>
