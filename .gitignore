@@ -1,7 +1,4 @@
-# Created by https://www.gitignore.io/api/bower,grunt,less
-
-node_modules
-dist
+# Created by https://www.gitignore.io/api/bower,grunt
 
 ### Bower ###
 bower_components
@@ -16,3 +13,8 @@ dist/
 
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
+
+
+### Custom ###
+node_modules
+!.app/scripts/vendor/jquert/dist/
