@@ -1,14 +1,14 @@
 require.config({
   baseUrl: 'scripts/',
   paths: {
-    'jquery': 'vendor/jquery/src/jquery',
+    'jquery': 'vendor/jquery/dist/jquery',
     'underscore': 'vendor/underscore/underscore',
     'backbone': 'vendor/backbone/backbone',
     'backbone.babysitter': 'vendor/backbone.babysitter/lib/backbone.babysitter',
     'backbone.wreqr': 'vendor/backbone.wreqr/lib/backbone.wreqr',
-	  'backbone.radio': 'vendor/backbone.radio/build/backbone.radio.min',
+    'backbone.radio': 'vendor/backbone.radio/build/backbone.radio.min',
     'backbone.marionette': 'vendor/backbone.marionette/lib/core/backbone.marionette',
-	  'handlebars': 'vendor/handlebars/handlebars',
+    'handlebars': 'vendor/handlebars/handlebars',
     'text': 'vendor/text/text',
     'templates': '../templates'
   },
