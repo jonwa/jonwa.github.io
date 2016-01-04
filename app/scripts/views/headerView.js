@@ -1,5 +1,5 @@
-define(['backbone.marionette', 'handlebars', 'text!templates/header.html'],
-  function(Marionette, Handlebars, template){
+define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars', 'text!templates/header.html'],
+  function($, _, Backbone, Marionette, Handlebars, template){
     return Marionette.View.extend({
       template: Handlebars.compile(template),
 
