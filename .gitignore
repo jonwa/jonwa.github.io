@@ -17,4 +17,4 @@ dist/
 
 ### Custom ###
 node_modules
-!.app/scripts/vendor/jquert/dist/
+!app/scripts/vendor/jquery/dist/
