@@ -2,6 +2,7 @@ require.config({
   baseUrl: 'scripts/',
   paths: {
     'jquery': 'vendor/jquery/dist/jquery',
+    'jquery.easing': 'vendor/jquery.easing/js/jquery.easing',
     'underscore': 'vendor/underscore/underscore',
     'backbone': 'vendor/backbone/backbone',
     'backbone.babysitter': 'vendor/backbone.babysitter/lib/backbone.babysitter',

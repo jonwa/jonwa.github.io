@@ -1,4 +1,4 @@
-define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars', 'classie', 'text!templates/header.html'],
+define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars', 'classie', 'text!templates/header.html', 'jquery.easing'],
   function($, _, Backbone, Marionette, Handlebars, classie, template){
     return Marionette.View.extend({
       template: Handlebars.compile(template),
@@ -15,6 +15,14 @@ define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars',
         		setTimeout(function(){ self.scrollPage(); }, 250);
         	}
         }, false );
+
+        $('body').on('click', '.page-scroll a', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top
+          }, 800, 'easeInOutExpo');
+          event.preventDefault();
+        });
       },
 
       render: function(){
