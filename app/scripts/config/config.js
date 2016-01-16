@@ -25,13 +25,6 @@ require.config({
     marionette: {
         exports: 'Marionette',
         deps: ['backbone']
-    },
-    classie: {
-      exports: 'classie',
-      deps: ['jquery']
-    },
-    easing: {
-      deps: ['jquery']
     }
   },
   deps: ['jquery', 'underscore']
