@@ -5,7 +5,7 @@ define(['jquery', 'underscore', 'backbone', 'backbone.marionette'],
     App.addRegions({
       header: '.header',
       intro: '.intro-header',
-      games: '.games',
+      games: '.portfolio',
       about: '.about'
     });
 
