@@ -3234,26 +3234,26 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #fff;
-  background-color: #18BC9C;
-  border-color: #15a589;
+  background-color: black;
+  border-color: #000000;
 }
 .btn-success:focus,
 .btn-success.focus {
   color: #fff;
-  background-color: #128f76;
-  border-color: #07342b;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #128f76;
-  border-color: #0e6f5c;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #128f76;
-  border-color: #0e6f5c;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -3265,8 +3265,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
   color: #fff;
-  background-color: #0e6f5c;
-  border-color: #07342b;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3282,11 +3282,11 @@ fieldset[disabled] .btn-success:focus,
 .btn-success.disabled.focus,
 .btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus {
-  background-color: #18BC9C;
-  border-color: #15a589;
+  background-color: black;
+  border-color: #000000;
 }
 .btn-success .badge {
-  color: #18BC9C;
+  color: black;
   background-color: #fff;
 }
 .btn-success:hover,
@@ -3295,8 +3295,8 @@ fieldset[disabled] .btn-success.focus {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #128f76;
-  border-color: #0e6f5c;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3318,11 +3318,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #18BC9C;
-  border-color: #15a589;
+  background-color: black;
+  border-color: #000000;
 }
 .btn-success .badge {
-  color: #18BC9C;
+  color: black;
   background-color: #fff;
 }
 .btn-info {
@@ -5083,11 +5083,11 @@ a.label:focus {
   background-color: #1a242f;
 }
 .label-success {
-  background-color: #18BC9C;
+  background-color: black;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #128f76;
+  background-color: #000000;
 }
 .label-info {
   background-color: #5bc0de;
@@ -5354,7 +5354,7 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
-  background-color: #18BC9C;
+  background-color: black;
 }
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -11306,7 +11306,7 @@ a:focus {
   margin: 0 auto;
 }
 .games .games-item .games-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
