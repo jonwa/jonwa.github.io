@@ -20,7 +20,7 @@ define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars',
           var $anchor = $(this);
           $('html, body').stop().animate({
               scrollTop: $($anchor.attr('href')).offset().top
-          }, 800 );
+          }, 800, 'easeInOutExpo' );
           event.preventDefault();
         });
       },
