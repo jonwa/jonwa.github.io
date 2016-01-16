@@ -9,6 +9,7 @@ require.config({
     'backbone.radio': 'vendor/backbone.radio/build/backbone.radio.min',
     'backbone.marionette': 'vendor/backbone.marionette/lib/core/backbone.marionette',
     'handlebars': 'vendor/handlebars/handlebars',
+    'classie': 'vendor/classie/classie',
     'text': 'vendor/text/text',
     'templates': '../templates'
   },
@@ -23,7 +24,7 @@ require.config({
     marionette: {
         exports: 'Marionette',
         deps: ['backbone']
-    }
+    },
   },
   deps: ['jquery', 'underscore']
 });

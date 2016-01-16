@@ -14,7 +14,7 @@ dist/
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
 
-
 ### Custom ###
-node_modules
+node_modules/
+vendor/
 !app/scripts/vendor/jquery/dist/
