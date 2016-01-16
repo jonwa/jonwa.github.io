@@ -12,7 +12,7 @@ define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars',
         window.addEventListener( 'scroll', function( event ) {
         	if( !self.didScroll ) {
         		self.didScroll = true;
-        		setTimeout(function(){ self.scrollPage(); }, 250);
+        		setTimeout(function(){ self.scrollPage(); }, 50);
         	}
         }, false );
 
@@ -20,7 +20,7 @@ define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars',
           var $anchor = $(this);
           $('html, body').stop().animate({
               scrollTop: $($anchor.attr('href')).offset().top
-          }, 800, 'easeInOutExpo');
+          }, 800, 'easeInOutExpo' );
           event.preventDefault();
         });
       },
