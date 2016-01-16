@@ -16,5 +16,4 @@ dist/
 
 ### Custom ###
 node_modules/
-vendor/
 !app/scripts/vendor/jquery/dist/
