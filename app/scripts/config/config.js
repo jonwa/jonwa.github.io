@@ -9,6 +9,7 @@ require.config({
     'backbone.wreqr': 'vendor/backbone.wreqr/lib/backbone.wreqr',
     'backbone.radio': 'vendor/backbone.radio/build/backbone.radio.min',
     'backbone.marionette': 'vendor/backbone.marionette/lib/core/backbone.marionette',
+    'bootstrap': 'vendor/bootstrap/dist/js/bootstrap',
     'handlebars': 'vendor/handlebars/handlebars',
     'classie': 'vendor/classie/classie',
     'text': 'vendor/text/text',
