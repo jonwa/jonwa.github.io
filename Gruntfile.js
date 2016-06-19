@@ -1,12 +1,11 @@
-//Gruntfile  
+//Gruntfile
 module.exports = function(grunt) {
-	
-	// requirejs compile options  
-	var compileOptions = {
 
-		mainConfigFile: 'app/scripts/main.js',
+	// requirejs compile options
+	var compileOptions = {
+		mainConfigFile: 'app/scripts/config/config.js',
 		baseUrl: 'app/scripts',
-		include: ['main'],
+		include: ['config/config'],
 		out: 'dist/main.min.js',
 		removeCombined: false,
 		findNestedDependencies: true,
@@ -17,7 +16,7 @@ module.exports = function(grunt) {
 			return contents;
 		}
 	}
-	
+
 	//Initializing the configuration object
 	grunt.initConfig({
 		// Task configuration
@@ -28,7 +27,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 				   //compiling base.less into styles.css
-				   "./app/styles/styles.css":"./app/styles/base.less",
+				   "./app/styles/styles.css": "./app/styles/base.less",
 				},
 			},
 			production: {
@@ -42,34 +41,34 @@ module.exports = function(grunt) {
 				},
 			},
 		},
-		requirejs: {  
+		requirejs: {
 			compile: {
 				options : compileOptions
 			}
 		},
-		watch: {  
+		watch: {
 			less: {
 				// Watch all .less files from the styles directory)
 				files: ['app/styles/*.less'],
 				tasks: ['less'],
 				// Reloads the browser
 				options: {
-				  livereload: true  
+					livereload: true
 				}
 			},
 			requirejs: {
 				// Watch only main.js so that we do not constantly recompile the .js files
-				files: [ 'app/scripts/main.js' ],
+				files: [ 'app/scripts/config/config.js' ],
 				tasks: [ 'requirejs' ],
 				// Reloads the browser
 				options: {
-				  livereload: true  
+					livereload: true
 				}
 			}
 		},
 	});
 
-	// Plugin loading  
+	// Plugin loading
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-watch');

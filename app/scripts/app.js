@@ -1,17 +1,17 @@
 define(['jquery', 'underscore', 'backbone', 'backbone.marionette'],
-  function($, _, Backbone, Marionette){
+function($, _, Backbone, Marionette){
     var App = new Backbone.Marionette.Application();
 
     App.addRegions({
-      header: '.header',
-      intro: '.intro-header',
-      games: '.portfolio',
-      about: '.about'
+        header: '.header',
+        intro: '.intro-header',
+        projects: '.portfolio',
+        about: '.about'
     });
 
     App.addInitializer(function(){
-      Backbone.history.start();
+        Backbone.history.start();
     });
 
     return App;
-  });
+});
