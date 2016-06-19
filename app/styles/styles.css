@@ -11130,6 +11130,9 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
+hr {
+  color: #777;
+}
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
@@ -11157,9 +11160,18 @@ p {
     font-size: 1.5em;
   }
 }
+.page-scroll {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 2em;
+}
 .intro-header {
   padding-top: 300px;
-  padding-bottom: 250px;
+  padding-bottom: 200px;
   text-align: center;
   color: #777;
   background-size: cover;
@@ -11175,8 +11187,14 @@ p {
 }
 .intro-divider {
   width: 400px;
+}
+.intro-divider-default {
   border-top: 1px solid #777;
   border-bottom: 1px solid #777;
+}
+.intro-divider-inverse {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 @media (max-width: 767px) {
   .intro-message {
@@ -11198,15 +11216,15 @@ p {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 100px 0 !important;
 }
 section h2 {
   margin: 0;
   font-size: 3em;
 }
 section.success {
-  background: #d3d3d3;
-  color: #555;
+  background: #dfdfdf;
+  color: #fff;
 }
 @media (max-width: 767px) {
   section {
@@ -11216,10 +11234,13 @@ section.success {
     padding-top: 75px;
   }
 }
+.portfolio hr {
+  color: #fff;
+}
 .portfolio h1,
 .portfolio h2,
 .portfolio h3 {
-  color: #777;
+  color: #fff;
 }
 .portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -11269,6 +11290,14 @@ section.success {
     margin: 0 0 30px;
   }
 }
+.about h1,
+.about h2,
+.about h3 {
+  color: #777;
+}
+.about p {
+  color: #777;
+}
 .btn {
   border-radius: 0;
   text-transform: uppercase;
@@ -11285,10 +11314,10 @@ section.success {
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #555;
+  border: 1px solid #777;
   outline: 0;
   color: #fff;
-  background-color: #555;
+  background-color: #777;
 }
 ::-moz-selection {
   text-shadow: none;

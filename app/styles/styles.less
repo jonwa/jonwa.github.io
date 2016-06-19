@@ -29,6 +29,10 @@ p {
   line-height: 1.5;
 }
 
+hr{
+    color: @default-text-color;
+}
+
 @media(min-width:768px) {
   p {
     margin: 0 0 35px;
@@ -58,9 +62,20 @@ p {
   }
 }
 
+.page-scroll{
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
 .intro-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 300px;
+  padding-bottom: 200px;
   text-align: center;
   color: @default-text-color;
   background-size: cover;
@@ -79,8 +94,14 @@ p {
 
 .intro-divider {
   width: 400px;
-  border-top: 1px solid @default-border-color;
-  border-bottom: 1px solid @default-border-color;
+}
+.intro-divider-default{
+    border-top: 1px solid @default-border-color;
+    border-bottom: 1px solid @default-border-color;
+}
+.intro-divider-inverse{
+    border-top: 1px solid @inverse-border-color;
+    border-bottom: 1px solid @inverse-border-color;
 }
 
 @media(max-width:767px) {
@@ -108,7 +129,7 @@ p {
 }
 
 section {
-  padding: 100px 0;
+  padding: 100px 0 !important;
   h2 {
   	margin: 0;
   	font-size: 3em;
@@ -130,11 +151,14 @@ section.success {
 }
 
 .portfolio {
-  h1,
-  h2,
-  h3{
-    color: @default-text-color;
-  }
+    hr{
+        color: @inverse-text-color;
+    }
+    h1,
+    h2,
+    h3{
+        color: @inverse-text-color;
+    }
   .portfolio-item {
     margin: 0 0 15px;
     right: 0;
@@ -176,7 +200,7 @@ section.success {
     }
   }
   *{
-  z-index: 2;
+      z-index: 2;
   }
 }
 
@@ -186,6 +210,17 @@ section.success {
       margin: 0 0 30px;
     }
   }
+}
+
+.about{
+    h1,
+    h2,
+    h3{
+        color: @default-text-color;
+    }
+    p{
+        color: @default-text-color;
+    }
 }
 
 .btn {
