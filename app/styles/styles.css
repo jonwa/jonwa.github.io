@@ -11158,8 +11158,8 @@ p {
   }
 }
 .intro-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 300px;
+  padding-bottom: 250px;
   text-align: center;
   color: #777;
   background-size: cover;
@@ -11205,7 +11205,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #f8f8f8;
+  background: #d3d3d3;
   color: #555;
 }
 @media (max-width: 767px) {

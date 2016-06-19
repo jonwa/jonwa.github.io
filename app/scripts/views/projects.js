@@ -1,6 +1,6 @@
 define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars', 'text!templates/projects.html'],
     function($, _, Backbone, Marionette, Handlebars, template){
-        return Marionette.View.extend({
+        return Marionette.ItemView.extend({
             template: Handlebars.compile(template),
         });
     });

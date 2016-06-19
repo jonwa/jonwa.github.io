@@ -1,6 +1,6 @@
 define(['jquery', 'underscore', 'backbone', 'backbone.marionette', 'handlebars', 'classie', 'text!templates/header.html', 'jquery.easing', 'bootstrap'],
 function($, _, Backbone, Marionette, Handlebars, classie, template){
-    return Marionette.View.extend({
+    return Marionette.ItemView.extend({
         template: Handlebars.compile(template),
         docElem: document.documentElement,
         header: document.querySelector( '.navbar-fixed-top' ),
@@ -20,7 +20,7 @@ function($, _, Backbone, Marionette, Handlebars, classie, template){
                 var $anchor = $(this);
                 $('html, body').stop().animate({
                     scrollTop: $($anchor.attr('href')).offset().top
-                }, 800, 'easeInOutExpo' );
+                }, 1500, 'easeInOutExpo' );
                 event.preventDefault();
             });
         },
