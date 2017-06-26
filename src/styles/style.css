@@ -1,0 +1,106 @@
+body {
+    width: 500px;
+    margin: 20px auto;
+    font-family: Helvetica, arial;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    white-space: nowrap;
+    padding: 2.5px;
+}
+
+li:after {
+    content: "\00b7";
+    font-weight: bolder;
+    padding: 10px;
+}
+
+li:last-child::after{
+    content: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover{
+    color: deepskyblue;
+}
+
+a:hover > img {
+    opacity: .9;
+}
+
+header {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.name {
+    font-size: 52px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.contact {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.projects{
+    padding: 0;
+    padding-top: 20px;
+}
+
+.projects > .title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px;
+    margin: 0;
+}
+
+.projects > .title:before {
+    content: "\00b7";
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.projects > .title:after {
+    content: "\00b7";
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.project {
+    padding: 0;
+}
+
+.project > .title {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 0;
+    margin: 0;
+}
+
+.project > .description {
+    text-align: justify;
+    margin-top: 0;
+}
+
+.project > img{
+    width: 100%;
+}

@@ -1,0 +1,45 @@
+{
+    "contacts": {
+        "title": "Jon Wahlström",
+        "items": [
+            {
+                "title": "CV",
+                "url": ""
+            },
+            {
+                "title": "GitHub",
+                "url": "https://github.com/jonwa"
+            },
+            {
+                "title": "LinkedIn",
+                "url": "https://www.linkedin.com/in/jon-wahlstr%C3%B6m-123452123/"
+            },
+            {
+                "title": "Mail",
+                "url": "mailto:ejfwahlstrom@gmail.com"
+            }
+        ]
+    },
+    "professional-projects": {
+        "title": "Professional Projects",
+        "items": [
+            {
+                "title": "RUiN",
+                "description": "",
+                "thumbnail": "/src/images/ruin.png",
+                "url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler"
+            }
+        ]
+    },
+    "personal-projects": {
+        "title": "Personal Projects",
+        "items": [
+            {
+                "title": "Pendulum Waves",
+                "description": "",
+                "thumbnail": "/src/images/pendulum_waves.png",
+                "url": "/assets/pendulumwaves"
+            }
+        ]
+    }
+}
