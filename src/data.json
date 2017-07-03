@@ -24,12 +24,12 @@
         "title": "Professional Projects",
         "items": [
             {
-                "title": "RUiN",
-                "description": "",
+                "name": "RUiN",
+                "description": "A top-down arcade style arena brawler where you select your own set of abilities and battle it out on deadly arenas.",
                 "organization": "Tarhead Studio",
                 "thumbnail": "/src/images/ruin.png",
                 "url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
-                "download": "Read more..."
+                "display_url": "Read more..."
             }
         ]
     },
@@ -37,20 +37,20 @@
         "title": "Personal Projects",
         "items": [
             {
-                "title": "Pendulum Waves",
+                "name": "Pendulum Waves",
                 "description": "A pendulum waves simulation using verlet integration.",
                 "organization": "",
                 "thumbnail": "/src/images/pendulum_waves.png",
                 "url": "/assets/pendulumwaves",
-                "download": "Play (Unity WebGL)"
+                "display_url": "Play in browser (Unity WebGL)"
             },
             {
-                "title": "Aesthetic Pathfinding",
+                "name": "Aesthetic Pathfinding",
                 "description": "Comparing performance of A*PS and Theta* in different game environments.",
                 "organization": "Bachelor Thesis",
                 "thumbnail": "/src/images/aesthetic_pathfinding.png",
                 "url": "/assets/aestheticpathfinding.rar",
-                "download": "Download (474kB)"
+                "display_url": "Download (474 kB)"
             }
         ]
     }

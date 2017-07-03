@@ -4,12 +4,13 @@ var createReactClass = require('create-react-class');
 module.exports = createReactClass({
     render() {
         return (
-            <a className="project" target="_blank" href={this.props.url}>
+            <div className="project">
                 <img src={this.props.thumbnail}/>
-                <p className="title">{this.props.title} {this.props.organization ? <span>- {this.props.organization}</span> : null}</p>
+                <p className="name">{this.props.name}</p>
+                { this.props.organization ? <p className="organization">{this.props.organization}</p> : null }
                 <p className="description">{this.props.description}</p>
-                <p className="download"><b>{this.props.download}</b></p>
-            </a>
+                <a className="display_url" target="_blank" href={this.props.url}>{this.props.display_url}</a>
+            </div>
         );
     }
 });

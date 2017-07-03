@@ -8,13 +8,13 @@ module.exports = createReactClass({
         for(var i = 0; i < this.props.projects.length; ++i) {
             var project = this.props.projects[i];
             projects.push(
-                <Project key={project.title}
-                         title={project.title}
+                <Project key={project.name}
+                         name={project.name}
                          description={project.description}
                          organization={project.organization}
                          thumbnail={project.thumbnail}
                          url={project.url}
-                         download={project.download}/>
+                         display_url={project.display_url}/>
             );
         }
 
