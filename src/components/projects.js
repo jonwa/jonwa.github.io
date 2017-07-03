@@ -11,8 +11,10 @@ module.exports = createReactClass({
                 <Project key={project.title}
                          title={project.title}
                          description={project.description}
+                         organization={project.organization}
                          thumbnail={project.thumbnail}
-                         url={project.url}/>
+                         url={project.url}
+                         download={project.download}/>
             );
         }
 

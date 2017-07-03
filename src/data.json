@@ -4,7 +4,7 @@
         "items": [
             {
                 "title": "CV",
-                "url": ""
+                "url": "/assets/jon_wahlstrom_cv_en.pdf"
             },
             {
                 "title": "GitHub",
@@ -26,8 +26,10 @@
             {
                 "title": "RUiN",
                 "description": "",
+                "organization": "Tarhead Studio",
                 "thumbnail": "/src/images/ruin.png",
-                "url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler"
+                "url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
+                "download": "Read more..."
             }
         ]
     },
@@ -36,9 +38,11 @@
         "items": [
             {
                 "title": "Pendulum Waves",
-                "description": "",
+                "description": "A pendulum waves simulation using verlet integration.",
+                "organization": "",
                 "thumbnail": "/src/images/pendulum_waves.png",
-                "url": "/assets/pendulumwaves"
+                "url": "/assets/pendulumwaves",
+                "download": "Play (Unity WebGL)"
             }
         ]
     }
