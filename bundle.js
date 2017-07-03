@@ -22511,13 +22511,13 @@ module.exports = createReactClass({
         var projects = [];
         for (var i = 0; i < this.props.projects.length; ++i) {
             var project = this.props.projects[i];
-            projects.push(React.createElement(Project, { key: project.title,
-                title: project.title,
+            projects.push(React.createElement(Project, { key: project.name,
+                name: project.name,
                 description: project.description,
                 organization: project.organization,
                 thumbnail: project.thumbnail,
                 url: project.url,
-                download: project.download }));
+                display_url: project.display_url }));
         }
 
         return React.createElement(
@@ -22547,34 +22547,28 @@ module.exports = createReactClass({
     displayName: 'exports',
     render: function render() {
         return React.createElement(
-            'a',
-            { className: 'project', target: '_blank', href: this.props.url },
+            'div',
+            { className: 'project' },
             React.createElement('img', { src: this.props.thumbnail }),
             React.createElement(
                 'p',
-                { className: 'title' },
-                this.props.title,
-                ' ',
-                this.props.organization ? React.createElement(
-                    'span',
-                    null,
-                    '- ',
-                    this.props.organization
-                ) : null
+                { className: 'name' },
+                this.props.name
             ),
+            this.props.organization ? React.createElement(
+                'p',
+                { className: 'organization' },
+                this.props.organization
+            ) : null,
             React.createElement(
                 'p',
                 { className: 'description' },
                 this.props.description
             ),
             React.createElement(
-                'p',
-                { className: 'download' },
-                React.createElement(
-                    'b',
-                    null,
-                    this.props.download
-                )
+                'a',
+                { className: 'display_url', target: '_blank', href: this.props.url },
+                this.props.display_url
             )
         );
     }
@@ -22610,12 +22604,12 @@ module.exports = {
 		"title": "Professional Projects",
 		"items": [
 			{
-				"title": "RUiN",
-				"description": "",
+				"name": "RUiN",
+				"description": "A top-down arcade style arena brawler where you select your own set of abilities and battle it out on deadly arenas.",
 				"organization": "Tarhead Studio",
 				"thumbnail": "/src/images/ruin.png",
 				"url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
-				"download": "Read more..."
+				"display_url": "Read more..."
 			}
 		]
 	},
@@ -22623,20 +22617,20 @@ module.exports = {
 		"title": "Personal Projects",
 		"items": [
 			{
-				"title": "Pendulum Waves",
+				"name": "Pendulum Waves",
 				"description": "A pendulum waves simulation using verlet integration.",
 				"organization": "",
 				"thumbnail": "/src/images/pendulum_waves.png",
 				"url": "/assets/pendulumwaves",
-				"download": "Play (Unity WebGL)"
+				"display_url": "Play in browser (Unity WebGL)"
 			},
 			{
-				"title": "Aesthetic Pathfinding",
-				"description": "Comparing performance of A*PS and Theta* in different game environments.",
+				"name": "Aesthetic Pathfinding",
+				"description": "Compare performance of A*PS and Theta* in different game environments.",
 				"organization": "Bachelor Thesis",
 				"thumbnail": "/src/images/aesthetic_pathfinding.png",
 				"url": "/assets/aestheticpathfinding.rar",
-				"download": "Download (474kB)"
+				"display_url": "Download (474 kB)"
 			}
 		]
 	}
