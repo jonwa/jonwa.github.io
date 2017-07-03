@@ -107,6 +107,7 @@ header {
 }
 
 .project > .download {
+    font-size: 12px;
     text-align: justify;
     margin-top: 0;
     margin-bottom: 50px;
