@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 84);
@@ -22514,8 +22514,10 @@ module.exports = createReactClass({
             projects.push(React.createElement(Project, { key: project.title,
                 title: project.title,
                 description: project.description,
+                organization: project.organization,
                 thumbnail: project.thumbnail,
-                url: project.url }));
+                url: project.url,
+                download: project.download }));
         }
 
         return React.createElement(
@@ -22551,12 +22553,28 @@ module.exports = createReactClass({
             React.createElement(
                 'p',
                 { className: 'title' },
-                this.props.title
+                this.props.title,
+                ' ',
+                this.props.organization ? React.createElement(
+                    'span',
+                    null,
+                    '- ',
+                    this.props.organization
+                ) : null
             ),
             React.createElement(
                 'p',
                 { className: 'description' },
                 this.props.description
+            ),
+            React.createElement(
+                'p',
+                { className: 'download' },
+                React.createElement(
+                    'b',
+                    null,
+                    this.props.download
+                )
             )
         );
     }
@@ -22572,7 +22590,7 @@ module.exports = {
 		"items": [
 			{
 				"title": "CV",
-				"url": ""
+				"url": "/assets/jon_wahlstrom_cv_en.pdf"
 			},
 			{
 				"title": "GitHub",
@@ -22594,8 +22612,10 @@ module.exports = {
 			{
 				"title": "RUiN",
 				"description": "",
+				"organization": "Tarhead Studio",
 				"thumbnail": "/src/images/ruin.png",
-				"url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler"
+				"url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
+				"download": "Read more..."
 			}
 		]
 	},
@@ -22604,9 +22624,19 @@ module.exports = {
 		"items": [
 			{
 				"title": "Pendulum Waves",
-				"description": "",
+				"description": "A pendulum waves simulation using verlet integration.",
+				"organization": "",
 				"thumbnail": "/src/images/pendulum_waves.png",
-				"url": "/assets/pendulumwaves"
+				"url": "/assets/pendulumwaves",
+				"download": "Play (Unity WebGL)"
+			},
+			{
+				"title": "Aesthetic Pathfinding",
+				"description": "Comparing performance of A*PS and Theta* in different game environments.",
+				"organization": "Bachelor Thesis",
+				"thumbnail": "/src/images/aesthetic_pathfinding.png",
+				"url": "/assets/aestheticpathfinding.rar",
+				"download": "Download (474kB)"
 			}
 		]
 	}
