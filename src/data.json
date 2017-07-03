@@ -43,6 +43,14 @@
                 "thumbnail": "/src/images/pendulum_waves.png",
                 "url": "/assets/pendulumwaves",
                 "download": "Play (Unity WebGL)"
+            },
+            {
+                "title": "Aesthetic Pathfinding",
+                "description": "Comparing performance of A*PS and Theta* in different game environments.",
+                "organization": "Bachelor Thesis",
+                "thumbnail": "/src/images/aesthetic_pathfinding.png",
+                "url": "/assets/aestheticpathfinding.rar",
+                "download": "Download (474kB)"
             }
         ]
     }
