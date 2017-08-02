@@ -22617,6 +22617,14 @@ module.exports = {
 		"title": "Personal Projects",
 		"items": [
 			{
+				"name": "Tearable Cloth",
+				"description": "A tearable cloth simulation using verlet integration.",
+				"organization": "",
+				"thumbnail": "/src/images/tearable_cloth.png",
+				"url": "/assets/tearablecloth",
+				"display_url": "Play in browser (Unity WebGL)"
+			},
+			{
 				"name": "Pendulum Waves",
 				"description": "A pendulum waves simulation using verlet integration.",
 				"organization": "",

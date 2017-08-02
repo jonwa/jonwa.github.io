@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "tearablecloth.data.unityweb",
+"asmCodeUrl": "tearablecloth.asm.code.unityweb",
+"asmMemoryUrl": "tearablecloth.asm.memory.unityweb",
+"asmFrameworkUrl": "tearablecloth.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
