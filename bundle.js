@@ -22516,8 +22516,7 @@ module.exports = createReactClass({
                 description: project.description,
                 organization: project.organization,
                 thumbnail: project.thumbnail,
-                url: project.url,
-                display_url: project.display_url }));
+                links: project.links }));
         }
 
         return React.createElement(
@@ -22546,6 +22545,20 @@ var createReactClass = __webpack_require__(33);
 module.exports = createReactClass({
     displayName: 'exports',
     render: function render() {
+        var links = [];
+        for (var i = 0; i < this.props.links.length; ++i) {
+            var link = this.props.links[i];
+            links.push(React.createElement(
+                'div',
+                { className: 'display_name' },
+                React.createElement(
+                    'a',
+                    { key: link.url, target: '_blank', href: link.url },
+                    link.display_name
+                ),
+                React.createElement('br', null)
+            ));
+        }
         return React.createElement(
             'div',
             { className: 'project' },
@@ -22565,11 +22578,7 @@ module.exports = createReactClass({
                 { className: 'description' },
                 this.props.description
             ),
-            React.createElement(
-                'a',
-                { className: 'display_url', target: '_blank', href: this.props.url },
-                this.props.display_url
-            )
+            links
         );
     }
 });
@@ -22608,8 +22617,12 @@ module.exports = {
 				"description": "A top-down arcade style arena brawler where you select your own set of abilities and battle it out on deadly arenas.",
 				"organization": "Tarhead Studio",
 				"thumbnail": "/src/images/ruin.png",
-				"url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
-				"display_url": "Read more..."
+				"links": [
+					{
+						"url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
+						"display_name": "Read more..."
+					}
+				]
 			}
 		]
 	},
@@ -22621,24 +22634,44 @@ module.exports = {
 				"description": "A tearable cloth simulation using verlet integration.",
 				"organization": "",
 				"thumbnail": "/src/images/tearable_cloth.png",
-				"url": "/assets/tearablecloth",
-				"display_url": "Play in browser (Unity WebGL)"
+				"links": [
+					{
+						"url": "/assets/tearablecloth",
+						"display_name": "Play in browser (Unity WebGL)"
+					},
+					{
+						"url": "https://github.com/jonwa/TearableCloth",
+						"display_name": "Source at GitHub"
+					}
+				]
 			},
 			{
 				"name": "Pendulum Waves",
 				"description": "A pendulum waves simulation using verlet integration.",
 				"organization": "",
 				"thumbnail": "/src/images/pendulum_waves.png",
-				"url": "/assets/pendulumwaves",
-				"display_url": "Play in browser (Unity WebGL)"
+				"links": [
+					{
+						"url": "/assets/pendulumwaves",
+						"display_name": "Play in browser (Unity WebGL)"
+					},
+					{
+						"url": "https://github.com/jonwa/PendulumWaves",
+						"display_name": "Source at GitHub"
+					}
+				]
 			},
 			{
 				"name": "Aesthetic Pathfinding",
 				"description": "Compare performance of A*PS and Theta* in different game environments.",
 				"organization": "Bachelor Thesis",
 				"thumbnail": "/src/images/aesthetic_pathfinding.png",
-				"url": "/assets/aestheticpathfinding.rar",
-				"display_url": "Download (474 kB)"
+				"links": [
+					{
+						"url": "/assets/aestheticpathfinding.rar",
+						"display_name": "Download (474 kB)"
+					}
+				]
 			}
 		]
 	}

@@ -13,8 +13,7 @@ module.exports = createReactClass({
                          description={project.description}
                          organization={project.organization}
                          thumbnail={project.thumbnail}
-                         url={project.url}
-                         display_url={project.display_url}/>
+                         links={project.links}/>
             );
         }
 
