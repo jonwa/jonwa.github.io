@@ -3,6 +3,7 @@ body {
     margin: 20px auto;
     font-family: Helvetica, arial;
     text-align: center;
+    color: #3f3f3f;
 }
 
 ul {
@@ -29,7 +30,7 @@ li:last-child::after{
 }
 
 a {
-    color: black;
+    color: #3f3f3f;
     text-decoration: none;
 }
 

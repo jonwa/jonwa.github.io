@@ -22697,7 +22697,7 @@ module.exports = {
 			{
 				"name": "Aesthetic Pathfinding",
 				"description": "Compare performance of A*PS and Theta* in different game environments.",
-				"organization": "Bachelor Thesis",
+				"organization": "",
 				"thumbnail": "/src/images/aesthetic_pathfinding.png",
 				"tags": [
 					"C#",
