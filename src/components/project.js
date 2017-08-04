@@ -3,6 +3,14 @@ var createReactClass = require('create-react-class');
 
 module.exports = createReactClass({
     render() {
+        var tags = [];
+        for(var i = 0; i < this.props.tags.length; ++i) {
+            var tag = this.props.tags[i];
+            tags.push(
+                <li className="tag">{tag}</li>
+            );
+        }
+
         var links = [];
         for(var i = 0; i < this.props.links.length; ++i) {
             var link = this.props.links[i];
@@ -21,6 +29,7 @@ module.exports = createReactClass({
                 <p className="name">{this.props.name}</p>
                 { this.props.organization ? <p className="organization">{this.props.organization}</p> : null }
                 <p className="description">{this.props.description}</p>
+                <ul className="tags">{tags}</ul>
                 {links}
             </div>
         );

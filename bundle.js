@@ -22516,6 +22516,7 @@ module.exports = createReactClass({
                 description: project.description,
                 organization: project.organization,
                 thumbnail: project.thumbnail,
+                tags: project.tags,
                 links: project.links }));
         }
 
@@ -22545,6 +22546,16 @@ var createReactClass = __webpack_require__(33);
 module.exports = createReactClass({
     displayName: 'exports',
     render: function render() {
+        var tags = [];
+        for (var i = 0; i < this.props.tags.length; ++i) {
+            var tag = this.props.tags[i];
+            tags.push(React.createElement(
+                'li',
+                { className: 'tag' },
+                tag
+            ));
+        }
+
         var links = [];
         for (var i = 0; i < this.props.links.length; ++i) {
             var link = this.props.links[i];
@@ -22559,6 +22570,7 @@ module.exports = createReactClass({
                 React.createElement('br', null)
             ));
         }
+
         return React.createElement(
             'div',
             { className: 'project' },
@@ -22577,6 +22589,11 @@ module.exports = createReactClass({
                 'p',
                 { className: 'description' },
                 this.props.description
+            ),
+            React.createElement(
+                'ul',
+                { className: 'tags' },
+                tags
             ),
             links
         );
@@ -22617,6 +22634,12 @@ module.exports = {
 				"description": "A top-down arcade style arena brawler where you select your own set of abilities and battle it out on deadly arenas.",
 				"organization": "Tarhead Studio",
 				"thumbnail": "/src/images/ruin.png",
+				"tags": [
+					"C#",
+					"Visual Studio",
+					"Unity3D",
+					"Steamworks SDK"
+				],
 				"links": [
 					{
 						"url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
@@ -22634,6 +22657,11 @@ module.exports = {
 				"description": "A tearable cloth simulation using verlet integration.",
 				"organization": "",
 				"thumbnail": "/src/images/tearable_cloth.png",
+				"tags": [
+					"C#",
+					"Visual Studio",
+					"Unity3D"
+				],
 				"links": [
 					{
 						"url": "/assets/tearablecloth",
@@ -22650,6 +22678,11 @@ module.exports = {
 				"description": "A pendulum waves simulation using verlet integration.",
 				"organization": "",
 				"thumbnail": "/src/images/pendulum_waves.png",
+				"tags": [
+					"C#",
+					"Visual Studio",
+					"Unity3D"
+				],
 				"links": [
 					{
 						"url": "/assets/pendulumwaves",
@@ -22666,10 +22699,20 @@ module.exports = {
 				"description": "Compare performance of A*PS and Theta* in different game environments.",
 				"organization": "Bachelor Thesis",
 				"thumbnail": "/src/images/aesthetic_pathfinding.png",
+				"tags": [
+					"C#",
+					"Visual Studio",
+					"Microsoft XNA Game Studio",
+					"Microsoft Windows Forms"
+				],
 				"links": [
 					{
 						"url": "/assets/aestheticpathfinding.rar",
-						"display_name": "Download (474 kB)"
+						"display_name": "Download .exe (474 kB)"
+					},
+					{
+						"url": "http://his.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=1&af=%5B%5D&searchType=SIMPLE&query=jon+wahlstr%C3%B6m&language=sv&pid=diva2%3A819477&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-3516#stha",
+						"display_name": "Download fulltext (sv)"
 					}
 				]
 			}
