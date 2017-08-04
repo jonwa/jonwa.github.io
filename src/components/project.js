@@ -14,6 +14,7 @@ module.exports = createReactClass({
                 </div>
             );
         }
+
         return (
             <div className="project">
                 <img src={this.props.thumbnail}/>
