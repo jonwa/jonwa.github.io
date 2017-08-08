@@ -22703,7 +22703,7 @@ module.exports = {
 					"C#",
 					"Visual Studio",
 					"Microsoft XNA Game Studio",
-					"Microsoft Windows Forms"
+					"Windows Forms"
 				],
 				"links": [
 					{

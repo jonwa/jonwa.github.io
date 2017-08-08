@@ -81,7 +81,7 @@
                 "description": "Compare performance of A*PS and Theta* in different game environments.",
                 "organization": "",
                 "thumbnail": "/src/images/aesthetic_pathfinding.png",
-                "tags": ["C#", "Visual Studio", "Microsoft XNA Game Studio", "Microsoft Windows Forms"],
+                "tags": ["C#", "Visual Studio", "Microsoft XNA Game Studio", "Windows Forms"],
                 "links": [
                     {
                         "url": "/assets/aestheticpathfinding.rar",
