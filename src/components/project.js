@@ -1,7 +1,6 @@
-var React = require('react');
-var createReactClass = require('create-react-class');
+import React from 'react'
 
-module.exports = createReactClass({
+export default class Project extends React.Component {
     render() {
         return (
             <div className="project">
@@ -14,7 +13,7 @@ module.exports = createReactClass({
                         this.props.tags.map((tag, i) => {
                             return (
                                 <li key={i} className="tag">{tag}</li>
-                            )
+                            );
                         })
                     }
                 </ul>
@@ -32,4 +31,4 @@ module.exports = createReactClass({
             </div>
         );
     }
-});
+}

@@ -1,8 +1,7 @@
-var React = require('react');
-var createReactClass = require('create-react-class');
-var Project = require('./project');
+import React from 'react'
+import Project from './Project'
 
-module.exports = createReactClass({
+export default class App extends React.Component {
     render() {
         return (
             <div className="projects">
@@ -17,11 +16,10 @@ module.exports = createReactClass({
                                      thumbnail={project.thumbnail}
                                      tags={project.tags}
                                      links={project.links}/>
-                        )
+                        );
                     })
                 }
             </div>
         );
     }
-
-});
+}
