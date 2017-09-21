@@ -3,34 +3,32 @@ var createReactClass = require('create-react-class');
 
 module.exports = createReactClass({
     render() {
-        var tags = [];
-        for(var i = 0; i < this.props.tags.length; ++i) {
-            var tag = this.props.tags[i];
-            tags.push(
-                <li className="tag">{tag}</li>
-            );
-        }
-
-        var links = [];
-        for(var i = 0; i < this.props.links.length; ++i) {
-            var link = this.props.links[i];
-            links.push(
-                <div className="display_name">
-                    <a key={link.url} target="_blank" href={link.url}>
-                        {link.display_name}
-                    </a><br/>
-                </div>
-            );
-        }
-
         return (
             <div className="project">
                 <img src={this.props.thumbnail}/>
                 <p className="name">{this.props.name}</p>
-                { this.props.organization ? <p className="organization">{this.props.organization}</p> : null }
+                {this.props.organization ? <p className="organization">{this.props.organization}</p> : null}
                 <p className="description">{this.props.description}</p>
-                <ul className="tags">{tags}</ul>
-                {links}
+                <ul className="tags">
+                    {
+                        this.props.tags.map((tag, i) => {
+                            return (
+                                <li key={i} className="tag">{tag}</li>
+                            )
+                        })
+                    }
+                </ul>
+                {
+                    this.props.links.map((link, i) => {
+                        return (
+                            <div key={i} className="display_name">
+                                <a key={link.url} target="_blank" href={link.url}>
+                                    {link.display_name}
+                                </a><br/>
+                            </div>
+                        );
+                    })
+                }
             </div>
         );
     }

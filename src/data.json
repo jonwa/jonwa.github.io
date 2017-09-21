@@ -24,15 +24,19 @@
         "title": "Professional Projects",
         "items": [
             {
-                "name": "RUiN",
+                "name": "Blast Out",
                 "description": "A top-down arcade style arena brawler where you select your own set of abilities and battle it out on deadly arenas.",
                 "organization": "Tarhead Studio",
-                "thumbnail": "/src/images/ruin.png",
-                "tags": ["C#", "Visual Studio", "Unity3D", "Steamworks SDK"],
+                "thumbnail": "/src/images/blastout.jpg",
+                "tags": [],
                 "links": [
                     {
-                        "url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
-                        "display_name": "Read more..."
+                        "url": "https://www.youtube.com/watch?v=Oqs7DnUVdW0",
+                        "display_name": "Watch Trailer"
+                    },
+                    {
+                        "url": "https://blastout-game.com/",
+                        "display_name": "Website"
                     }
                 ]
             }
@@ -46,7 +50,7 @@
                 "description": "A tearable cloth simulation using verlet integration.",
                 "organization": "",
                 "thumbnail": "/src/images/tearable_cloth.png",
-                "tags": ["C#", "Visual Studio", "Unity3D"],
+                "tags": ["C#", "Microsoft Visual Studio", "Unity3D"],
                 "links": [
                     {
                         "url": "/assets/tearablecloth",
@@ -63,7 +67,7 @@
                 "description": "A pendulum waves simulation using verlet integration.",
                 "organization": "",
                 "thumbnail": "/src/images/pendulum_waves.png",
-                "tags": ["C#", "Visual Studio", "Unity3D"],
+                "tags": ["C#", "Microsoft Visual Studio", "Unity3D"],
                 "links": [
                     {
                         "url": "/assets/pendulumwaves",
@@ -81,7 +85,7 @@
                 "description": "Compare performance of A*PS and Theta* in different game environments.",
                 "organization": "",
                 "thumbnail": "/src/images/aesthetic_pathfinding.png",
-                "tags": ["C#", "Visual Studio", "Microsoft XNA Game Studio", "Windows Forms"],
+                "tags": ["C#", "Microsoft Visual Studio", "Microsoft XNA Game Studio", "Windows Forms", "JSON"],
                 "links": [
                     {
                         "url": "/assets/aestheticpathfinding.rar",
