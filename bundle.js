@@ -22508,18 +22508,6 @@ var Project = __webpack_require__(187);
 module.exports = createReactClass({
     displayName: 'exports',
     render: function render() {
-        var projects = [];
-        for (var i = 0; i < this.props.projects.length; ++i) {
-            var project = this.props.projects[i];
-            projects.push(React.createElement(Project, { key: project.name,
-                name: project.name,
-                description: project.description,
-                organization: project.organization,
-                thumbnail: project.thumbnail,
-                tags: project.tags,
-                links: project.links }));
-        }
-
         return React.createElement(
             'div',
             { className: 'projects' },
@@ -22528,7 +22516,15 @@ module.exports = createReactClass({
                 { className: 'title' },
                 this.props.title
             ),
-            projects
+            this.props.projects.map(function (project, i) {
+                return React.createElement(Project, { key: i,
+                    name: project.name,
+                    description: project.description,
+                    organization: project.organization,
+                    thumbnail: project.thumbnail,
+                    tags: project.tags,
+                    links: project.links });
+            })
         );
     }
 });
@@ -22546,31 +22542,6 @@ var createReactClass = __webpack_require__(33);
 module.exports = createReactClass({
     displayName: 'exports',
     render: function render() {
-        var tags = [];
-        for (var i = 0; i < this.props.tags.length; ++i) {
-            var tag = this.props.tags[i];
-            tags.push(React.createElement(
-                'li',
-                { className: 'tag' },
-                tag
-            ));
-        }
-
-        var links = [];
-        for (var i = 0; i < this.props.links.length; ++i) {
-            var link = this.props.links[i];
-            links.push(React.createElement(
-                'div',
-                { className: 'display_name' },
-                React.createElement(
-                    'a',
-                    { key: link.url, target: '_blank', href: link.url },
-                    link.display_name
-                ),
-                React.createElement('br', null)
-            ));
-        }
-
         return React.createElement(
             'div',
             { className: 'project' },
@@ -22593,9 +22564,26 @@ module.exports = createReactClass({
             React.createElement(
                 'ul',
                 { className: 'tags' },
-                tags
+                this.props.tags.map(function (tag, i) {
+                    return React.createElement(
+                        'li',
+                        { key: i, className: 'tag' },
+                        tag
+                    );
+                })
             ),
-            links
+            this.props.links.map(function (link, i) {
+                return React.createElement(
+                    'div',
+                    { key: i, className: 'display_name' },
+                    React.createElement(
+                        'a',
+                        { key: link.url, target: '_blank', href: link.url },
+                        link.display_name
+                    ),
+                    React.createElement('br', null)
+                );
+            })
         );
     }
 });
@@ -22630,20 +22618,19 @@ module.exports = {
 		"title": "Professional Projects",
 		"items": [
 			{
-				"name": "RUiN",
+				"name": "Blast Out",
 				"description": "A top-down arcade style arena brawler where you select your own set of abilities and battle it out on deadly arenas.",
 				"organization": "Tarhead Studio",
-				"thumbnail": "/src/images/ruin.png",
-				"tags": [
-					"C#",
-					"Visual Studio",
-					"Unity3D",
-					"Steamworks SDK"
-				],
+				"thumbnail": "/src/images/blastout.jpg",
+				"tags": [],
 				"links": [
 					{
-						"url": "https://www.kickstarter.com/projects/199536733/ruin-top-down-arena-brawler",
-						"display_name": "Read more..."
+						"url": "https://www.youtube.com/watch?v=Oqs7DnUVdW0",
+						"display_name": "Watch Trailer"
+					},
+					{
+						"url": "https://blastout-game.com/",
+						"display_name": "Website"
 					}
 				]
 			}
@@ -22659,7 +22646,7 @@ module.exports = {
 				"thumbnail": "/src/images/tearable_cloth.png",
 				"tags": [
 					"C#",
-					"Visual Studio",
+					"Microsoft Visual Studio",
 					"Unity3D"
 				],
 				"links": [
@@ -22680,7 +22667,7 @@ module.exports = {
 				"thumbnail": "/src/images/pendulum_waves.png",
 				"tags": [
 					"C#",
-					"Visual Studio",
+					"Microsoft Visual Studio",
 					"Unity3D"
 				],
 				"links": [
@@ -22701,9 +22688,10 @@ module.exports = {
 				"thumbnail": "/src/images/aesthetic_pathfinding.png",
 				"tags": [
 					"C#",
-					"Visual Studio",
+					"Microsoft Visual Studio",
 					"Microsoft XNA Game Studio",
-					"Windows Forms"
+					"Windows Forms",
+					"JSON"
 				],
 				"links": [
 					{
